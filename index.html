@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project: BreathWork</title>
+  </head>
+  <body>
+    <style>
+      h1,
+      h2,
+      p,
+      a {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #272044;
+        opacity: 0.9;
+        font-weight: lighter;
+      }
+      h2 {
+        font-weight: lighter;
+        line-height: 40px;
+      }
+      body {
+        background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 20px;
+        opacity: 0.8;
+      }
+      P {
+        text-align: left;
+        margin: 30px 10px;
+        padding: 20px 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 23px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #272044;
+        background-color: thistle;
+        border: 1px solid thistle;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #272044;
+        color: thistle;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      .sideNote {
+        text-align: left;
+        margin: 30px 10px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: #272044;
+      }
+      .noteTitle {
+        text-decoration: underline;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: #272044;
+      }
+      .noteTitle:hover {
+        color: violet;
+      }
+    </style>
+    <div class="container">
+      <h1>Can Breathwork Help?</h1>
+      <h2>With some things, yes! Not everything.</h2>
+      <hr color="white" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/459/original/1_Y5CV3cMANQ48j6B_SFxxIw.jpg?1637544100"
+        alt="woman braething"
+        width="200px"
+      />
+      <p>
+        <strong>You're (likely) already breathing!</strong> While some types of
+        breathwork are intense and take a long time to master, others are simple
+        and can be practiced anytime. Simple breathwork techniques often help
+        people with things like stress, focus, nervous system regulation, sleep
+        <em>and </em>waking up!!
+      </p>
+      <a
+        href="https://www.google.com/books/edition/The_Healing_Power_of_the_Breath/lsnILhVd-HcC?hl=en&gbpv=0"
+        target="_blank"
+      >
+        Check out this book!
+      </a>
+      <br />
+      <button>Learn More!</button>
+      <div class="sideNote">
+        <span class="noteTitle">An important side note:</span> As helpful as
+        breathwork and other wellness practices are, they won't
+        <em>on their own</em> solve every issue! Breathwork may not
+        <em>always</em> be a helpful suggestion, so try to avoid giving
+        unsolicited advice 😉. <br /><br /><br />Coded by Evy Yergan
+      </div>
+    </div>
+    <script>
+      function getEmail() {
+        let answer = prompt("Would you like us to email you more info?");
+        answer = answer.toLowerCase();
+        answer = answer.trim();
+        if (answer === "yes" || answer === "yes!" || answer === "yes.") {
+          prompt("Great! Please provide your email address");
+        } else {
+          alert("No Problem!");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", getEmail);
+    </script>
+  </body>
+</html>
